@@ -1,0 +1,16 @@
+insert into TYPE(name) values ("Work");
+insert into type(name) values ('School');
+insert into type(name) values ('Home');
+insert into type(name) values ('Personal');
+insert into type(name) values ('Sport');
+insert into task(name, done, end_Date, id_type) values ('End of this project', 0, null, 1);
+insert into task(name, done, end_Date, id_type) values ('Meet with Laura', 1, '2021-04-08', 4);
+insert into task(name, done, end_Date, id_type) values ('Clean bathroom', 1, '2021-04-16', 3);
+insert into task(name, done, end_Date, id_type) values ('Organize photo shoot', 0, null, 4);
+insert into task(name, done, end_Date, id_type) values ('Upload new pictures on the side', 1, '2021-03-10', 1);
+insert into task(name, done, end_Date, id_type) values ('Learn English words', 0, '2021-05-01', 2);
+insert into task(name, done, end_Date, id_type) values ('Create new Api', 1, '2021-02-01', 1);
+insert into task(name, done, end_Date, id_type) values ('Go to the gym', 0, '2021-06-25', 5);
+insert into task(name, done, end_Date, id_type) values ('Buy new skates', 0, '2021-12-01', 5);
+insert into task(name, done, end_Date, id_type) values ( 'Go to the skating rink', 0, '2021-02-20', 5);
+insert into note(note, id_task) values ('The skating rink is not open :(', 10);

@@ -1,5 +1,7 @@
 package com.example.ToDoList.controller;
 
+import com.example.ToDoList.controller.dto.TaskDto;
+import com.example.ToDoList.controller.dto.TaskDtoMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,8 +18,8 @@ public class TaskController {
     private final TaskService taskService;
 
     @GetMapping("/tasks")
-    public List<Task> getTaskList(){
-        return taskService.getTaskList();
+    public List<TaskDto> getTaskList(){
+        return TaskDtoMapper.mapToTaskDtos(taskService.getTaskList());
     }
 
     @GetMapping("/tasks/{id}")

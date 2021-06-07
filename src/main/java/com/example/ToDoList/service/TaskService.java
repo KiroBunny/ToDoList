@@ -14,7 +14,7 @@ public class TaskService {
     private final TaskRepository taskRepository;
 
     public List<Task> getTaskList(){
-        return taskRepository.findAll();
+        return taskRepository.findAllTasks();
     }
 
     public Task getSingleTask(int id) {

@@ -14,7 +14,7 @@ public class TypeService {
     private final TypeRepository typeRepository;
 
     public List<Type> getTypeList(){
-        return typeRepository.findAll();
+        return typeRepository.findAllTypes();
     }
 
     public  Type getSingleType(int id) {
